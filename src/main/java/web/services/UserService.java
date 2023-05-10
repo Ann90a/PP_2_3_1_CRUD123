@@ -1,6 +1,5 @@
 package web.services;
 
-import org.springframework.transaction.annotation.Transactional;
 import web.entity.User;
 
 import java.util.List;
@@ -12,7 +11,6 @@ public interface UserService {
 
     List<User> getAll();
 
-    @Transactional
     void delete(long id);
 
     void update(User user);
